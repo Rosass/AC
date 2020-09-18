@@ -29,6 +29,9 @@ Auth::routes(
 
 //Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/admin', 'AdminController@index')->name('admin');
+
+Route::resource('/jefe', 'JefeController');
 Route::resource('/usuario', 'UsuarioController');
 Route::resource('/area', 'AreaController');
 Route::resource('/tipo_usuario', 'TipoUsuarioController');

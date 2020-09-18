@@ -48,18 +48,5 @@ class LoginController extends Controller
         if(auth()->user()->id_tipo_fk == '1'){
             return '/admin';
         }
-
-        if(auth()->user()->id_tipo_fk == '2'){
-            return '/DEP';
-        }
-
-
-        if(auth()->user()->id_tipo_fk == '3'){
-            return '/';
-        }
-
-        if(auth()->user()->id_tipo_fk == '4'){
-            return '/serescoleres';
-        }
     }
 }

@@ -23,7 +23,9 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto  mt-2 mt-lg-0 ">
 
-
+        <li class="nav-item  style">
+            <a class="nav-link" href="{{ route('jefe.index') }}">Jefe</a>
+          </li>
 
         <li class="nav-item">
             <a class="nav-link" href="{{ route('area.index') }}">Area</a>
@@ -38,10 +40,23 @@
             <a class="nav-link" href="{{ route('usuario.index') }}">Usuario</a>
           </li>
 
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <a class="nav-link text-light" href="#">Cerrar Sesion</a>
-      </form>
+
+        </ul>
+<li class="form-inline my-2 my-lg-0">
+            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+                                 document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+            </div>
+        </li>
     </div>
   </nav>
   <div class="container mt-3">

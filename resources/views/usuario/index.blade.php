@@ -12,7 +12,7 @@
             <table class="table text-center">
                 <thead class="bg-primary text-light">
                   <tr>
-                    <th scole="col">usuaio</th>
+                    <th scole="col">usuario</th>
                     <th scole="col">contraseña</th>
                     <th scole="col">id tipo</th>
                     <th scole="col">id area</th>

@@ -12,7 +12,10 @@ use Illuminate\Support\Facades\Hash;
 class UsuarioController extends Controller
 {
 
-
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
    // protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
