@@ -39,3 +39,4 @@ Route::resource('/tipo_usuario', 'TipoUsuarioController');
 Route::get('/div-est-profesionales', 'DepController@index')->name('dep');
 Route::resource('/periodo', 'PeriodoController');
 Route::resource('/actividad', 'ActividadController');
+Route::resource('/inscripcion', 'InscripcionController');

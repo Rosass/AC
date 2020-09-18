@@ -29,10 +29,10 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ route('actividad.index') }}">Actividad</a>
           </li>
-          <!--
+
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('tipo_usuario.index') }}">Tipo de usuario</a>
-          </li>
+            <a class="nav-link" href="{{ route('inscripcion.index') }}">inscripcion</a>
+          </li>   <!--
           <li class="nav-item">
             <a class="nav-link" href="{{ route('usuario.index') }}">Usuario</a>
           </li> -->
