@@ -26,10 +26,10 @@
         <li class="nav-item  style">
             <a class="nav-link" href="{{ route('periodo.index') }}">Periodo</a>
         </li>
-         <!--  <li class="nav-item">
-            <a class="nav-link" href="{{ route('area.index') }}">Area</a>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('actividad.index') }}">Actividad</a>
           </li>
-
+          <!--
           <li class="nav-item">
             <a class="nav-link" href="{{ route('tipo_usuario.index') }}">Tipo de usuario</a>
           </li>
