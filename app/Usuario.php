@@ -11,7 +11,7 @@ class Usuario extends Authenticatable
     use Notifiable;
 
     protected $table = 'usuario';
-    protected $primaryKey = 'usuario_pk';
+    protected $primaryKey = 'id';
 
     protected $fillable = ['usuario_pk','password','id_area_fk','id_tipo_fk'];
     public $timestamps = false;

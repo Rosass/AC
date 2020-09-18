@@ -27,23 +27,20 @@
             <a class="nav-link" href="{{ route('jefe.index') }}">Jefe</a>
           </li>
 
-        <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="{{ route('area.index') }}">Area</a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" href="{{ route('tipo_usuario.index') }}">Tipo de usuario</a>
           </li>
-
-
           <li class="nav-item">
             <a class="nav-link" href="{{ route('usuario.index') }}">Usuario</a>
           </li>
-
-
         </ul>
-<li class="form-inline my-2 my-lg-0">
+          <li class="form-inline my-2 my-lg-0">
             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                {{ Auth::user()->usuario_pk }}
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="{{ route('logout') }}"

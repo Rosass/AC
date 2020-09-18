@@ -12,10 +12,10 @@ use Illuminate\Support\Facades\Hash;
 class UsuarioController extends Controller
 {
 
-    public function __construct()
+  /*   public function __construct()
     {
         $this->middleware('auth');
-    }
+    } */
    // protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
@@ -25,9 +25,9 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-        $usuarios =  Usuario::orderBy('usuario_pk')->paginate(5);
+        $usuarios =  Usuario::orderBy('id','asc')->paginate(5);
 
-        return view('usuario.index')->with('usuarios', $usuarios);
+        return view('usuario.index', compact('usuarios'));
     }
 
     /**
