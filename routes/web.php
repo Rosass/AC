@@ -35,3 +35,6 @@ Route::resource('/jefe', 'JefeController');
 Route::resource('/usuario', 'UsuarioController');
 Route::resource('/area', 'AreaController');
 Route::resource('/tipo_usuario', 'TipoUsuarioController');
+
+Route::get('/div-est-profesionales', 'DepController@index')->name('dep');
+Route::resource('/periodo', 'PeriodoController');
