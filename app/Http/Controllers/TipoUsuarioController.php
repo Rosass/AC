@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class TipoUsuarioController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -40,14 +45,14 @@ class TipoUsuarioController extends Controller
         $data = $request->validate([
             'id_tipo'=>'required',
             'nombre'=>'required',
-           
+
         ]);
           TipoUsuario::create ([
 
-             'id_tipo_pk'=>$data ['id_tipo'], 
+             'id_tipo_pk'=>$data ['id_tipo'],
             'nombre_tipo'=>$data ['nombre'],
-            
-            
+
+
         ]);
         return redirect()->action('TipoUsuarioController@index');
     }
