@@ -94,6 +94,7 @@
                                 <th scole="col">Correo</th>
                                 <th scole="col">Estatus</th>
                                 <th scole="col">Editar</th>
+                                <th scole="col">prueba</th>
 
                             </tr>
                         </thead>
